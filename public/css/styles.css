@@ -1,0 +1,49 @@
+.main_header {
+    background: #3ABFF5;
+}
+
+.main_header .main_header_logo a {
+    color: #fff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: width 5s;
+}
+
+.main_header .main_header_logo a:hover {
+    content: '';
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+
+.main_menu {
+    margin: 0;
+}
+
+.main_menu li {
+    margin: 4px 20px;
+    list-style: none;
+}
+
+.main_menu li a {
+    padding: 4px 8px;
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.main_menu li a:hover {
+    content: '';
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+footer {
+    background: #3ABFF5;
+    font-size: 0.875em;
+}
