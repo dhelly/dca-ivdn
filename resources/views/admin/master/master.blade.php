@@ -10,12 +10,19 @@
 
     <title>IVDN | DCA</title>
 
+    <link rel="shortcut icon" href="{{ url('backend/assets/images/favicon.ico') }}" type="image/x-icon">
+
     <link href="{{ url(mix('backend/views/admin/css/template.css'))}}" rel="stylesheet" />
     <link href="{{ url(mix('backend/views/admin/css/dataTables.bootstrap4.css'))}}" rel="stylesheet" />
+    <link href="{{ url(mix('backend/views/admin/css/ajax.css'))}}" rel="stylesheet" />
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body class="sb-nav-fixed">
+
+    <div class="ajax_response"></div>
+
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">IVDN | DCA</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
@@ -40,7 +47,7 @@
                             Mapas
                         </a>
 
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="{{ route('public.maps') }}" target="_blank">
                             <div class="sb-nav-link-icon"><i class="fas fa-globe"></i></div>
                             Público
                         </a>
@@ -66,6 +73,7 @@
 
     <script src="{{ url(mix('backend/views/admin/js/datatable.js'))}}" ></script>
     <script src="{{ url(mix('backend/views/admin/js/datatable_config.js'))}}" ></script>
+    <script src="{{ url(mix('backend/views/admin/js/ajax.js'))}}" ></script>
 
 </body>
 

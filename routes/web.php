@@ -14,15 +14,25 @@
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
     /** rota de login */
     Route::get('/', 'AuthController@showLoginForm')->name('login');
-    Route::get('login', 'AuthController@login')->name('login.do');
+    Route::post('login', 'AuthController@login')->name('login.do');
+
+    /** Rotas Protegidas */
+    Route::group(['middleware' => ['auth']], function () {
+        /** Dashboard Home */
+        Route::get('home', 'AuthController@home')->name('home');
+
+        /** Maps */
+        Route::resource('maps', 'MapController');
+    });
 
     /** logout */
     Route::get('logout', 'AuthController@logout')->name('logout');
-
-    /** rota principal */
-    Route::get('home', 'AuthController@home')->name('home');
 });
 
 Route::get('/', function () {
     return view('public.maps');
-});
+})->name('public.maps');
+
+Route::get('/list', function () {
+    return view('public.list');
+})->name('public.list');

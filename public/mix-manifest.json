@@ -1,9 +1,11 @@
 {
     "/backend/views/admin/css/template.css": "/backend/views/admin/css/template.css?id=3170b20bacda91387177",
     "/backend/views/admin/css/dataTables.bootstrap4.css": "/backend/views/admin/css/dataTables.bootstrap4.css?id=edf78b080b220a78a2e9",
+    "/backend/views/admin/css/ajax.css": "/backend/views/admin/css/ajax.css?id=b18ac5907dc371235ac3",
     "/css/styles.css": "/css/styles.css?id=04786428b32fc2b75050",
     "/backend/views/admin/js/libs.js": "/backend/views/admin/js/libs.js?id=2885a8bbcf0f6c62dc2b",
     "/backend/views/admin/js/scripts.js": "/backend/views/admin/js/scripts.js?id=58a476e7fb7210179729",
     "/backend/views/admin/js/datatable.js": "/backend/views/admin/js/datatable.js?id=b9eaedde65833eddbee8",
-    "/backend/views/admin/js/datatable_config.js": "/backend/views/admin/js/datatable_config.js?id=415e7e1b10a5ab2bb0a4"
+    "/backend/views/admin/js/datatable_config.js": "/backend/views/admin/js/datatable_config.js?id=415e7e1b10a5ab2bb0a4",
+    "/backend/views/admin/js/ajax.js": "/backend/views/admin/js/ajax.js?id=78e5bde88d7980ec8b1d"
 }

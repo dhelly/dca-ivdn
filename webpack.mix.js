@@ -21,6 +21,10 @@ mix
     ], 'public/backend/views/admin/css/dataTables.bootstrap4.css')
 
     .styles([
+        'resources/views/admin/css/ajax.css'
+    ], 'public/backend/views/admin/css/ajax.css')
+
+    .styles([
         'resources/views/public/assets/css/styles.css'
     ], 'public/css/styles.css')
 
@@ -43,6 +47,11 @@ mix
         'resources/views/admin/dist/js/dtconfig.js'
     ], 'public/backend/views/admin/js/datatable_config.js')
 
+    .scripts([
+        'resources/views/admin/scripts/ajax.js'
+    ], 'public/backend/views/admin/js/ajax.js')
+
     .copyDirectory('resources/views/public/assets/images', 'public/assets/images')
+    .copyDirectory('resources/views/admin/assets/images', 'public/backend/assets/images')
 
     .version();
